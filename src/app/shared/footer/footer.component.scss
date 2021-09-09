@@ -1,0 +1,15 @@
+footer {
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+
+  .github {
+    background: white;
+    fill: black
+  }
+
+  .linkedin {
+    fill: #007BB6
+  }
+}
