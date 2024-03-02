@@ -3,10 +3,8 @@ import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [],
-  imports: [
-  ],
-  exports: [
-  ],
+  imports: [],
+  exports: [],
   providers: [],
   bootstrap: []
 })

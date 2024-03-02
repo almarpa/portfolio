@@ -1,24 +1,19 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [],
   imports: [
-    MatSidenavModule,
-    FormsModule,
-    MatButtonModule,
-    MatIconModule,
-    MatDividerModule
+    RouterModule
+  ],
+  declarations: [
+    FooterComponent,
+    HeaderComponent,
   ],
   exports: [
-    MatSidenavModule,
-    MatIconModule,
-    MatDividerModule
+    HeaderComponent, 
+    FooterComponent,
   ],
   providers: [],
   bootstrap: []
