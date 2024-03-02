@@ -4,9 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [
-    RouterModule
-  ],
+  imports: [],
   declarations: [
     FooterComponent,
     HeaderComponent,
