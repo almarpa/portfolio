@@ -1,15 +1,54 @@
-footer {
-  margin: 0 !important;
-  display: flex;
-  justify-content: center;
-  background-color: lightblue;
+.site-footer {
+  height: 170px;
+  background-color: #353535;
+  padding: 10px 0px;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
 
-  .github {
-    background: white;
-    fill: black;
-  }
+footer .container > div {
+  color: white;
+  padding: 0 20px;
+  font-size: 12px;
+}
 
-  .linkedin {
-    fill: #007bb6;
+@media (min-width: 768px) {
+  .site-footer {
+    height: 60px;
   }
+  .container {
+    display: flex;
+    text-align: center;
+  }
+  footer .container > div {
+    flex: auto;
+  }
+}
+
+footer h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+}
+
+footer h3 span {
+  color: #fe4918;
+}
+
+footer nav.social-networks {
+  display: inline;
+  text-align: left;
+  height: 30px;
+  width: 30px;
+  
+  a {
+    margin: 5px;
+  }
+}
+
+.circle-link {
+    fill: #ffffff;
+    height: 30px;
+    width: 30px;
 }

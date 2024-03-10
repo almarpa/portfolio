@@ -1,18 +1,23 @@
-<nav class="navbar">
-  <!-- <div class="navbar-logo">
-    <img src="assets/logo.png" alt="My App Logo" />
-  </div> -->
-  <mat-toolbar color="primary">
-    <span>almarpaWEB</span>
-    <a #about>Home</a>
-    <a #skills>About</a>
-    <a #projects>Contact</a>
-    <a #projects>Contact</a>
-  </mat-toolbar>
-  <ul class="navbar-links">
-    <li><a #about>About</a></li>
-    <li><a #skills>Skills</a></li>
-    <li><a #projects>Projects</a></li>
-    <li><a #experience>Experience</a></li>
-  </ul>
-</nav>
+<div class="navbar">
+  <div class="container clearfix">
+    <div class="logo">
+      <!-- TODO: make own logo
+      <div class="navbar-logo">
+        <img src="../../../assets/imgs/logo.svg" alt="logo" />
+      </div> -->
+    </div>
+
+    <div class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-navigation clearfix">
+      <a #about>About</a>
+      <a #experience>Experience</a>
+      <a #skills>Skills</a>
+      <a #projects>Projects</a>
+    </nav>
+  </div>
+</div>

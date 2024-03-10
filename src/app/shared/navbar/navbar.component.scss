@@ -1,31 +1,89 @@
-/** TOOLBAR EXAMPLE*/
-.toolbar {
-  margin: 20px;
-  display: flex;
-  align-items: center;
+.navbar {
+  background-color: #353535;
+  padding: 10px 10px;
+}
+.main-navigation {
+  display: none;
+  width: 100%;
+}
+.main-navigation a {
+  font-family: 'Oswald', sans-serif;
   color: white;
-  font-weight: 600;
-  font-size: 20px;
-  justify-content: space-between;
-
-  .main-menu {
-    margin: 0;
-
-    .nav {
-      width: 100%;
-
-      a {
-        margin: 0 10px;
-        color: white;
-        font-size: 1rem;
-        text-decoration: none;
-        line-height: 5rem;
-        width: 100%;
-
-        :hover {
-          color: lightblue;
-        }
-      }
-    }
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all .6s ease;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main-navigation a:hover {
+  background-color: #fe4918;
+}
+.main-navigation a:last-child {
+  border: 2px solid  #fe4918;
+  color:  #fe4918;
+}
+.main-navigation a:last-child:hover {
+  color:  #ffffff;
+}
+@media (min-width: 768px) {
+  .main-navigation {
+    float: right;
+    text-align: right;
+    display: block;
   }
+  .main-navigation a {
+    padding: 10px 10px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin: 0 10px 0 0;
+  }
+}
+
+.mobile-menu {
+  width: 60px;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.mobile-menu:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu span {
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: white;
+  display: block;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
 }
