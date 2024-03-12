@@ -1,20 +1,17 @@
 .site-footer {
-  height: 170px;
+  height: 200px;
   background-color: #353535;
-  padding: 10px 0px;
-  margin-top:20px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 footer .container > div {
   color: white;
-  padding: 0 20px;
   font-size: 12px;
 }
 
 @media (min-width: 768px) {
   .site-footer {
-    height: 60px;
+    height: 100px;
   }
   .container {
     display: flex;
