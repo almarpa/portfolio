@@ -1,7 +1,15 @@
-import {Component, Output, EventEmitter, OnInit} from '@angular/core';
+import {
+  Component,
+  Output,
+  EventEmitter,
+  OnInit,
+  ElementRef,
+} from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {NgbCollapse} from '@ng-bootstrap/ng-bootstrap';
 import {IconsModule} from '../../icons/icons.module';
+import {Target} from '@angular/compiler';
+import {Event, EventType} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,16 +19,16 @@ import {IconsModule} from '../../icons/icons.module';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  isMenuCollapsed = true;
+
   @Output()
   public menuSelected = new EventEmitter<String>();
 
   constructor() {}
 
-  isMenuCollapsed = true;
-
   ngOnInit(): void {}
 
-  public handleClick(menuSelected: String) {
-    this.menuSelected.emit(menuSelected);
+  public handleClick(menuSelected: MouseEvent) {
+    this.menuSelected.emit((menuSelected.target as HTMLElement).id);
   }
 }
