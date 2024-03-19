@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
       this.experienceSection.nativeElement.scrollIntoView({behavior: 'smooth'});
     } else if (section == 'skills') {
       this.skillsSection.nativeElement.scrollIntoView({behavior: 'smooth'});
-    } else if (section == 'experience') {
+    } else if (section == 'projects') {
       this.projectsSection.nativeElement.scrollIntoView({behavior: 'smooth'});
     }
   }
