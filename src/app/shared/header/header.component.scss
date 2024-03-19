@@ -7,6 +7,7 @@ header {
   position: relative;
   height: 850px;
   @include background-cover;
+
   .overlay {
     position: absolute;
     top: 0;
@@ -24,6 +25,7 @@ header {
     text-align: center;
     h1 {
       font-size: 40px;
+      font-weight: 500;
       color: $skyblue;
       line-height: 1;
       text-shadow: rgba(0, 0, 0, 1) 0px 2px 5px;
@@ -34,8 +36,8 @@ header {
         font-weight: 500;
         line-height: 1;
         display: block;
-        padding: 100px 0;
-        @include sans-serif-font;
+        text-shadow: rgba(0, 0, 0, 1) 0px 2px 5px;
+        padding: 120px 0;
     }
   }
 }
