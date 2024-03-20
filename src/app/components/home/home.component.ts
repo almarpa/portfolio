@@ -22,13 +22,13 @@ export class HomeComponent implements OnInit {
 
   scroll(section: String) {
     if (section == 'about') {
-      this.aboutSection.nativeElement.scrollIntoView({behavior: 'smooth'});
+      this.aboutSection.nativeElement.scrollIntoView();
     } else if (section == 'experience') {
-      this.experienceSection.nativeElement.scrollIntoView({behavior: 'smooth'});
+      this.experienceSection.nativeElement.scrollIntoView();
     } else if (section == 'skills') {
-      this.skillsSection.nativeElement.scrollIntoView({behavior: 'smooth'});
+      this.skillsSection.nativeElement.scrollIntoView();
     } else if (section == 'projects') {
-      this.projectsSection.nativeElement.scrollIntoView({behavior: 'smooth'});
+      this.projectsSection.nativeElement.scrollIntoView();
     }
   }
 }
