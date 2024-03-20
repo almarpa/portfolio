@@ -1,13 +1,23 @@
-:host{
+.main-container {
+  background-color: #353535;
 
-}
+  .about-container {
+    height: 500px;
+    background-color: red;
+  }
 
-.home-container {
-  width: 100%;
-  height: 100%;
-  background-color: lightslategray;
-}
+  .experience-container {
+    height: 500px;
+    background-color: yellow;
+  }
 
-h2 {
-  color: aquamarine;
+  .skills-container {
+    height: 500px;
+    background-color: green;
+  }
+
+  .projects-container {
+    height: 500px;
+    background-color: aqua;
+  }
 }

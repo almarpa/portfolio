@@ -1,15 +1,58 @@
-footer {
-  margin: 0 !important;
-  display: flex;
-  justify-content: center;
-  background-color: lightblue;
+@import '../../../styles/styles.scss';
 
-  .github {
-    background: white;
-    fill: black
+.site-footer {
+  height: 250px;
+  background-color: #353535;
+  padding: 20px 0;
+}
+
+.container > div {
+  color: white;
+  font-size: 12px;
+}
+
+footer h3 {
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+footer h3 span {
+  color: $skyblue;
+}
+
+footer nav.social-networks {
+  display: inline;
+  text-align: left;
+  height: 30px;
+  width: 30px;
+  
+  a {
+    margin: 5px;
   }
+}
 
-  .linkedin {
-    fill: #007BB6
+.circle-link {
+    fill: #ffffff;
+    height: 30px;
+    width: 30px;
+    margin: 0 0 15px 0;
+
+    &:focus,
+    &:hover {
+      fill: fade-out($skyblue, .2);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .site-footer {
+    height: 100px;
+  }
+  .container {
+    display: flex;
+    text-align: center;
+  }
+  footer .container > div {
+    flex: auto;
   }
 }
