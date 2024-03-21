@@ -1,15 +1,7 @@
-import {
-  Component,
-  Output,
-  EventEmitter,
-  OnInit,
-  ElementRef,
-} from '@angular/core';
+import {Component, Output, EventEmitter, OnInit} from '@angular/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {NgbCollapse} from '@ng-bootstrap/ng-bootstrap';
 import {IconsModule} from '../../icons/icons.module';
-import {Target} from '@angular/compiler';
-import {Event, EventType} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',

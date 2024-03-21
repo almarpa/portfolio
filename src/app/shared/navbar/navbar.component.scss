@@ -21,7 +21,6 @@ nav {
   .navbar-toggler {
     font-size: 12px;
     background-color: $gray-400;
-    padding: 12px;
     border-radius: 10px 100px / 120px;
   }
   .navbar-nav {
@@ -59,7 +58,6 @@ nav {
           &:focus,
           &:hover {
             color: fade-out($skyblue, .2);
-            text-shadow: rgba(0, 0, 0, 1) 0px 2px 5px;
           }
         }
       }

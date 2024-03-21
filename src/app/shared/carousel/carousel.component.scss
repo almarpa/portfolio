@@ -1,0 +1,17 @@
+@import '../../../styles/styles.scss';
+
+:host {
+    height: 100%;
+    width: 100%;
+}
+
+.img-wrapper {
+    img {
+        width: auto;
+        height: 820px;
+
+        @media only screen and (min-width: 992px) {
+            width: 100%;
+        }
+    }
+}

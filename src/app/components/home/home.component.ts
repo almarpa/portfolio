@@ -1,7 +1,7 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Component, ViewChild, ElementRef} from '@angular/core';
 import {NavbarComponent} from '../../shared/navbar/navbar.component';
 import {FooterComponent} from '../../shared/footer/footer.component';
-import {HeaderComponent} from '../../shared/header/header.component';
+import {HeaderComponent} from '../header/header.component';
 
 @Component({
   selector: 'app-home',
@@ -10,15 +10,13 @@ import {HeaderComponent} from '../../shared/header/header.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   @ViewChild('about') aboutSection!: ElementRef;
   @ViewChild('experience') experienceSection!: ElementRef;
   @ViewChild('skills') skillsSection!: ElementRef;
   @ViewChild('projects') projectsSection!: ElementRef;
 
   constructor() {}
-
-  ngOnInit(): void {}
 
   scroll(section: String) {
     if (section == 'about') {
