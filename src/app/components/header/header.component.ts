@@ -13,11 +13,11 @@ import {CarouselComponent} from '../../shared/carousel/carousel.component';
 })
 export class HeaderComponent {
   @Input() greeting: string = '¡Hi!';
-  @Input() heading: string = "I'm Alejandro Marco Palomares";
+  @Input() heading: string = 'I am Alejandro Marco Palomares';
   @Input() subHeading: string[] = [
     'Software Engineer',
-    'Android Development',
-    'Web Development',
+    'Mobile Developer',
+    'Web Developer',
     'Teamwork Enthusiast',
   ];
 

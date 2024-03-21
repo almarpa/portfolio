@@ -2,11 +2,12 @@ import {Component, ViewChild, ElementRef} from '@angular/core';
 import {NavbarComponent} from '../../shared/navbar/navbar.component';
 import {FooterComponent} from '../../shared/footer/footer.component';
 import {HeaderComponent} from '../header/header.component';
+import {AboutComponent} from '../about/about.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, HeaderComponent, FooterComponent],
+  imports: [NavbarComponent, HeaderComponent, FooterComponent, AboutComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
