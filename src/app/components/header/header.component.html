@@ -1,6 +1,6 @@
-<header [style.background-image]="safeBackgroudImage">
-  <div class="overlay"></div>
-  <div class="container">
+<header>
+  <app-carousel></app-carousel>
+  <div class="overlay">
     <div class="site-heading">
       <h1>{{ greeting }}</h1>
       <h1>{{ heading }}</h1>
@@ -9,6 +9,7 @@
         [strings]="subHeading"
         [loop]="true"
         [typeSpeed]="80"
+        [backDelay]="5000"
       >
         <span class="typing"></span>
       </ngx-typed-js>

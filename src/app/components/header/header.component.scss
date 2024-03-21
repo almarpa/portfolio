@@ -1,24 +1,14 @@
 @import '../../../styles/styles.scss';
 
 header {
-  background: no-repeat center center;
-  background-color: $gray-600;
-  background-attachment: scroll;
-  position: relative;
-  height: 850px;
-  @include background-cover;
-
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: $gray-900;
-    opacity: 0.2;
+    right: 0;
   }
   .site-heading {
-    padding: 150px 0;
+    padding: 160px 0;
     color: $skyblue;
   }
   .site-heading {
@@ -29,7 +19,7 @@ header {
       color: $skyblue;
       line-height: 1;
       text-shadow: rgba(0, 0, 0, 1) 0px 2px 5px;
-      letter-spacing: 7px;
+      letter-spacing: 4px;
     }
     .subHeading {
         font-size: 40px;
