@@ -1,20 +1,22 @@
+@import '../../../styles/styles.scss';
+
 .main-container {
   .about-container {
     height: 850px;
   }
 
   .experience-container {
-    height: 500px;
-    background-color: yellow;
+    height: 850px;
+    background-color: $gray-200;
   }
 
   .skills-container {
-    height: 500px;
-    background-color: green;
+    height: 850px;
   }
 
   .projects-container {
-    height: 500px;
-    background-color: aqua;
+    height: 850px;
+    color: white;
+    background-color: #353535;
   }
 }
