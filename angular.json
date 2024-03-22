@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "almarpaWEB": {
+    "almarpaDEV": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/almarpaWEB",
+            "outputPath": "dist/almarpaDEV",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "almarpaWEB:build:production"
+              "buildTarget": "almarpaDEV:build:production"
             },
             "development": {
-              "buildTarget": "almarpaWEB:build:development"
+              "buildTarget": "almarpaDEV:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "almarpaWEB:build"
+            "buildTarget": "almarpaDEV:build"
           }
         },
         "test": {
