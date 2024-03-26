@@ -12,7 +12,7 @@ import {CarouselComponent} from '../../shared/carousel/carousel.component';
   styleUrls: ['header.component.scss'],
 })
 export class HeaderComponent {
-  @Input() greeting: string = '¡Hi!';
+  @Input() greeting: string = '¡Hi there!';
   @Input() heading: string = 'I am Alejandro Marco Palomares';
   @Input() subHeading: string[] = [
     'Software Engineer',

@@ -1,18 +1,23 @@
+@import '../../../styles/styles.scss';
+
 .main-container {
-  background-color: #353535;
+  .about-container {
+    height: 850px;
+  }
 
   .experience-container {
-    height: 500px;
-    background-color: yellow;
+    height: 850px;
+    background-color: $gray-400;
   }
 
   .skills-container {
-    height: 500px;
-    background-color: green;
+    height: auto;
+    background-color: $gray-1000;
   }
 
   .projects-container {
-    height: 500px;
-    background-color: aqua;
+    height: 850px;
+    color: white;
+    background-color: $gray-400;
   }
 }
