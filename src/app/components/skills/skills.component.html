@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class="title">Skills</h1>
+  <div class="justify-content-center d-flex cards__container card-deck">
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let skill of techSkills">
+        <app-skill [skill]="skill"></app-skill>
+      </div>
+    </div>
+  </div>
+</div>
