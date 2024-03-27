@@ -12,10 +12,10 @@ import {NgbCarouselConfig, NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarouselComponent {
   backgroundImages: string[] = [
-    '../../assets/imgs/gallery_1.jpg',
-    '../../assets/imgs/gallery_2.jpg',
-    '../../assets/imgs/gallery_3.jpg',
-    '../../assets/imgs/gallery_4.jpg',
+    './assets/imgs/gallery_1.jpg',
+    './assets/imgs/gallery_2.jpg',
+    './assets/imgs/gallery_3.jpg',
+    './assets/imgs/gallery_4.jpg',
   ];
 
   constructor(config: NgbCarouselConfig) {
