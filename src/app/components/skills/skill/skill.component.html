@@ -1,20 +1,15 @@
-<div class="focus mt-2 mb-2 card">
+<div class="focus mt-2 mb-3 card">
   <div class="card-body">
     <div class="text-center card-title card-title h5">
       {{ skill.description }}
     </div>
     <hr />
-    <p class="card-text d-flex justify-content-start flex-column card-text">
-      <span class="p-2" *ngFor="let technology of skill.technologies">
-        <a
-          class="text-dark text-decoration-none"
-          href="https://nodejs.org/en/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img src="{{ technology.logo }}" />
-          {{ technology.name }}
-        </a>
-      </span>
-    </p>
+    <div
+      class="card-container d-flex"
+      *ngFor="let technology of skill.technologies"
+    >
+      <img src="{{ technology.logo }}" />
+      <h3 class="card-text">{{ technology.name }}</h3>
+    </div>
   </div>
 </div>

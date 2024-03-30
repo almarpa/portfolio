@@ -2,7 +2,9 @@
 
 .main-container {
   .about-container {
-    height: 850px;
+    height: auto;
+    align-content: center;
+    min-height: 850px;
   }
 
   .experience-container {

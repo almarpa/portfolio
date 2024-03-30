@@ -2,7 +2,6 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  min-width: 300px;
 }
 
 .focus:hover {
@@ -42,9 +41,16 @@
   color: white;
 }
 
-.cards__container {
-  flex-wrap: wrap;
-  margin: 5px;
+.card-container {
+  display: flex;
+  padding: 10px;
+}
+
+.card-text {
+  font-weight: 500;
+  letter-spacing: 1px;
+  align-content: center;
+  margin-left: 15px;
 }
 
 img {

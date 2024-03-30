@@ -54,6 +54,10 @@ export class SkillsComponent {
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
         ),
         new Technology(
+          'JavaScript',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+        ),
+        new Technology(
           'HTML',
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
         ),
@@ -66,18 +70,10 @@ export class SkillsComponent {
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
         ),
       ]),
-      new Skill('Testing', [
+      new Skill('Cross-Platform', [
         new Technology(
-          'JUnit / Mockito',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-plain-wordmark.svg',
-        ),
-        new Technology(
-          'Karma',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/karma/karma-original.svg',
-        ),
-        new Technology(
-          'Jasmine',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jasmine/jasmine-original.svg',
+          'Ionic',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg',
         ),
       ]),
       new Skill('Backend', [
@@ -106,6 +102,24 @@ export class SkillsComponent {
         new Technology(
           'Sequelize',
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg',
+        ),
+      ]),
+      new Skill('Testing', [
+        new Technology(
+          'JUnit',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-plain-wordmark.svg',
+        ),
+        new Technology(
+          'Mockito',
+          'https://raw.githubusercontent.com/mockito/mockito/main/src/main/javadoc/org/mockito/logo.png',
+        ),
+        new Technology(
+          'Karma',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/karma/karma-original.svg',
+        ),
+        new Technology(
+          'Jasmine',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jasmine/jasmine-original.svg',
         ),
       ]),
       new Skill('VersionControl', [
