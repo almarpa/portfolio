@@ -76,34 +76,6 @@ export class SkillsComponent {
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg',
         ),
       ]),
-      new Skill('Backend', [
-        new Technology(
-          'NodeJS',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
-        ),
-        new Technology(
-          'JavaScript',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-        ),
-        new Technology(
-          'Express',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
-        ),
-      ]),
-      new Skill('DataBase', [
-        new Technology(
-          'MySQL',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
-        ),
-        new Technology(
-          'Oracle',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg',
-        ),
-        new Technology(
-          'Sequelize',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg',
-        ),
-      ]),
       new Skill('Testing', [
         new Technology(
           'JUnit',
@@ -122,10 +94,36 @@ export class SkillsComponent {
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jasmine/jasmine-original.svg',
         ),
       ]),
-      new Skill('VersionControl', [
+      new Skill('DataBase', [
         new Technology(
-          'GIT',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+          'MySQL',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+        ),
+        new Technology(
+          'Oracle',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg',
+        ),
+        new Technology(
+          'SQLite',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg',
+        ),
+        new Technology(
+          'Sequelize',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sequelize/sequelize-original.svg',
+        ),
+      ]),
+      new Skill('Backend', [
+        new Technology(
+          'NodeJS',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
+        ),
+        new Technology(
+          'JavaScript',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+        ),
+        new Technology(
+          'Express',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
         ),
       ]),
       new Skill('Hosting', [
@@ -136,6 +134,22 @@ export class SkillsComponent {
         new Technology(
           'Netlify',
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg',
+        ),
+      ]),
+      new Skill('Methodology', [
+        new Technology(
+          'Scrum',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaaHcafYoSrJaYi_iqoZQcSYUMDbkR7MB-Yg&usqp=CAU',
+        ),
+        new Technology(
+          'JIRA',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg',
+        ),
+      ]),
+      new Skill('VersionControl', [
+        new Technology(
+          'GIT',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
         ),
       ]),
     ];

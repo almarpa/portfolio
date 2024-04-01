@@ -1,7 +1,7 @@
 @import '../../../styles/variables';
 
 .site-footer {
-  height: 250px;
+  height: auto;
   background-color: $gray-1000;
   padding: 20px 0;
 }
@@ -45,9 +45,6 @@ footer nav.social-networks {
 }
 
 @media only screen and (min-width: 768px) {
-  .site-footer {
-    height: 100px;
-  }
   .container {
     display: flex;
     text-align: center;
