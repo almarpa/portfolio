@@ -2,16 +2,11 @@
 
 .main-container {
   .about-container {
-    height: 850px;
-  }
-
-  .experience-container {
-    height: 850px;
-    background-color: $gray-400;
+    align-content: center;
+    min-height: 850px;
   }
 
   .skills-container {
-    height: auto;
     background-color: $gray-1000;
   }
 

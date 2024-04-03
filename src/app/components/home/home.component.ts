@@ -4,6 +4,7 @@ import {FooterComponent} from '../../shared/footer/footer.component';
 import {HeaderComponent} from '../header/header.component';
 import {AboutComponent} from '../about/about.component';
 import {SkillsComponent} from '../skills/skills.component';
+import {ExperienceComponent} from '../experience/experience.component';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import {SkillsComponent} from '../skills/skills.component';
     FooterComponent,
     AboutComponent,
     SkillsComponent,
+    ExperienceComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
