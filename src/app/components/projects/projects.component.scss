@@ -1,0 +1,18 @@
+@import '../../../styles/styles.scss';
+
+.projects-section {
+  padding: 80px 50px;
+
+  @media only screen and (min-width: 500px) {
+    padding: 80px 100px;
+  }
+}
+
+.title {
+  color: $gray-700;
+  font-size: 4em;
+  font-weight: 500;
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+}

@@ -1,5 +1,8 @@
 <header>
-  <app-carousel></app-carousel>
+  <app-carousel
+    [backgroundImages]="carouselImages"
+    [thumbnailMode]="false"
+  ></app-carousel>
   <div class="overlay">
     <div class="site-heading">
       <h1>{{ greeting }}</h1>
