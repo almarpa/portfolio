@@ -21,5 +21,12 @@ export class HeaderComponent {
     'Teamwork Enthusiast',
   ];
 
+  carouselImages: string[] = [
+    './assets/imgs/gallery_1.jpg',
+    './assets/imgs/gallery_2.jpg',
+    './assets/imgs/gallery_3.jpg',
+    './assets/imgs/gallery_4.jpg',
+  ];
+
   constructor() {}
 }

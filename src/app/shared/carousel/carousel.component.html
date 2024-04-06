@@ -1,6 +1,10 @@
-<ngb-carousel>
+<ngb-carousel
+  [showNavigationArrows]="thumbnailMode"
+  [wrap]="!thumbnailMode"
+  [interval]="thumbnailMode ? 0 : 7000"
+>
   <ng-template *ngFor="let image of backgroundImages" ngbSlide>
-    <div class="img-wrapper">
+    <div [className]="thumbnailMode ? 'thumbnail-wrapper' : 'wrapper'">
       <img [src]="image" alt="" />
     </div>
   </ng-template>
