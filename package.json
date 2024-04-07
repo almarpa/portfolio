@@ -9,7 +9,7 @@
     "test": "ng test",
     "serve:ssr:project": "node dist/project/server/server.mjs",
     "lint": "ng lint",
-    "deploy": "ng deploy --base-href=/portfolio/"
+    "deploy": "ng deploy --base-href=/"
   },
   "private": true,
   "dependencies": {
