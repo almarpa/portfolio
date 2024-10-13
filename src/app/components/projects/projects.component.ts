@@ -32,6 +32,33 @@ export class ProjectsComponent {
       'https://github.com/almarpa/AndroidBaseTemplate',
     ),
     new Project(
+      'Rick&MortyApp',
+      'DragonBall iOS / Android app built in Kotlin Multiplatform with native views using SwiftUI and Jetpack Compose.',
+      [
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/1.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/2.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/3.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/4.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/5.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/6.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/7.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/8.png?raw=true',
+        'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/9.png?raw=true',
+      ],
+      'https://github.com/almarpa/RickAndMortyApp',
+    ),
+    new Project(
+      'DragonBallApp',
+      'DragonBall iOS / Android app built in Kotlin Multiplatform with native views using SwiftUI and Jetpack Compose.',
+      [
+        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/3.png?raw=true',
+        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/4.png?raw=true',
+        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/1.png?raw=true',
+        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/2.png?raw=true',
+      ],
+      'https://github.com/almarpa/DragonBallApp',
+    ),
+    new Project(
       'FreeWeather',
       'Android application for consulting weather forecasts from AEMET´s REST API and based on the MVP pattern. Developed for an end-of-degree project.',
       [
