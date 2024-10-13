@@ -33,7 +33,7 @@ export class ProjectsComponent {
     ),
     new Project(
       'Rick&MortyApp',
-      'DragonBall iOS / Android app built in Kotlin Multiplatform with native views using SwiftUI and Jetpack Compose.',
+      'Rick&Morty iOS / Android app built entirely on Compose UI Multiplatform.',
       [
         'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/1.png?raw=true',
         'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/2.png?raw=true',
