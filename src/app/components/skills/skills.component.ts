@@ -33,15 +33,25 @@ export class SkillsComponent {
         ),
         new Technology(
           'Room',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVH77iNvBmMDCzlZJ19eF0AHT4KdniNsB5g&s',
         ),
         new Technology(
-          'Retrofit',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg',
+          'Retrofit - Ktor',
+          'https://static.vecteezy.com/system/resources/thumbnails/008/328/554/small_2x/api-icon-style-free-vector.jpg',
         ),
         new Technology(
-          'Dagger/Hilt',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/android/android-original.svg',
+          'Dagger2/Hilt - Koin',
+          'https://miro.medium.com/v2/resize:fit:1400/1*gtkCSdzPZVMeqv-qqytRYw.png',
+        ),
+      ]),
+      new Skill('Cross-Platform', [
+        new Technology(
+          'Kotlin Multiplatform',
+          'https://img.pccomponentes.com/pcblog/3712/android-vs-ios.jpg',
+        ),
+        new Technology(
+          'Ionic',
+          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg',
         ),
       ]),
       new Skill('Frontend', [
@@ -70,20 +80,14 @@ export class SkillsComponent {
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
         ),
       ]),
-      new Skill('Cross-Platform', [
-        new Technology(
-          'Ionic',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg',
-        ),
-      ]),
       new Skill('Testing', [
         new Technology(
           'JUnit',
-          'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-plain-wordmark.svg',
+          'https://igorski.co/content/images/wordpress/2018/03/874086.png',
         ),
         new Technology(
           'Mockito',
-          'https://raw.githubusercontent.com/mockito/mockito/main/src/main/javadoc/org/mockito/logo.png',
+          'https://raw.githubusercontent.com/mockito/mockito/release/2.x/src/javadoc/org/mockito/logo.png',
         ),
         new Technology(
           'Karma',
