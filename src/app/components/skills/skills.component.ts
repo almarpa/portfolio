@@ -32,6 +32,10 @@ export class SkillsComponent {
           'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
         ),
         new Technology(
+          'XML',
+          'https://cdn.iconscout.com/icon/free/png-256/free-xml-file-icon-download-in-svg-png-gif-formats--document-doc-pack-files-folders-icons-1950399.png',
+        ),
+        new Technology(
           'Room',
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVH77iNvBmMDCzlZJ19eF0AHT4KdniNsB5g&s',
         ),
@@ -48,6 +52,10 @@ export class SkillsComponent {
         new Technology(
           'Kotlin Multiplatform',
           'https://img.pccomponentes.com/pcblog/3712/android-vs-ios.jpg',
+        ),
+        new Technology(
+          'Flutter',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRaazQd2nP4zhAOIcADgvWh1eNcReh_xeyw&s',
         ),
         new Technology(
           'Ionic',
@@ -85,6 +93,7 @@ export class SkillsComponent {
           'JUnit',
           'https://igorski.co/content/images/wordpress/2018/03/874086.png',
         ),
+        new Technology('MockK', 'https://mockk.io/doc/logo-site.png'),
         new Technology(
           'Mockito',
           'https://raw.githubusercontent.com/mockito/mockito/release/2.x/src/javadoc/org/mockito/logo.png',
