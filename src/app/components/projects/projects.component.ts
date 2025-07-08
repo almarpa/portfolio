@@ -14,6 +14,21 @@ import {CommonModule} from '@angular/common';
 export class ProjectsComponent {
   projects: Project[] = [
     new Project(
+      'KMMTemplateApp',
+      'Starter Kotlin Multiplatform Compose template for Android & iOS that provides a project structure with good practices using MVVM pattern and popular libraries like: Ktor, Room, Koin and DataStore.',
+      [
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/Detail.png?raw=true',
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/Home.png?raw=true',
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/Search.png?raw=true',
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/Team.png?raw=true',
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/NewMember.png?raw=true',
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/Drawer.png?raw=true',
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/Settings.png?raw=true',
+        'https://github.com/almarpa/KMMTemplateApp/blob/develop/composeApp/src/main/res/snapshots/Landscape.png?raw=true',
+      ],
+      'https://github.com/almarpa/KMMTemplateApp',
+    ),
+    new Project(
       'TemplateApp',
       'Starter Android Compose template that provides a project structure with good practices using MVVM pattern and popular libraries like: Retrofit, Room, HILT and DataStore.',
       [
@@ -33,7 +48,7 @@ export class ProjectsComponent {
     ),
     new Project(
       'Rick&MortyApp',
-      'Rick&Morty iOS / Android app built entirely on Compose UI Multiplatform.',
+      'iOS & Android Rick&Morty app built entirely on Compose UI Multiplatform.',
       [
         'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/1.png?raw=true',
         'https://github.com/almarpa/RickAndMortyApp/blob/develop/composeApp/src/commonMain/snapshots/2.png?raw=true',
@@ -48,15 +63,15 @@ export class ProjectsComponent {
       'https://github.com/almarpa/RickAndMortyApp',
     ),
     new Project(
-      'DragonBallApp',
-      'DragonBall iOS / Android app built in Kotlin Multiplatform with native views using SwiftUI and Jetpack Compose.',
+      'TodoApp',
+      'iOS & Android Todo App built in Flutter using BLoC and Repository pattern with Firebase Authentication.',
       [
-        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/3.png?raw=true',
-        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/4.png?raw=true',
-        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/1.png?raw=true',
-        'https://github.com/almarpa/DragonBallApp/blob/develop/shared/src/commonMain/kotlin/com/almarpa/dragonballapp/resources/2.png?raw=true',
+        'https://github.com/almarpa/TodoApp/blob/develop/assets/snapshots/Login.png?raw=true',
+        'https://github.com/almarpa/TodoApp/blob/develop/assets/snapshots/SignIn.png?raw=true',
+        'https://github.com/almarpa/TodoApp/blob/develop/assets/snapshots/TaskList.png?raw=true',
+        'https://github.com/almarpa/TodoApp/blob/develop/assets/snapshots/NewTask.png?raw=true',
       ],
-      'https://github.com/almarpa/DragonBallApp',
+      'https://github.com/almarpa/TodoApp',
     ),
     new Project(
       'FreeWeather',
@@ -84,7 +99,6 @@ export class ProjectsComponent {
         'https://github.com/almarpa/MacularPRO_FrontEnd/assets/38918727/9574900d-c800-4575-b3ef-629b985b2067',
         'https://github.com/almarpa/MacularPRO_FrontEnd/assets/38918727/e7e3825b-1183-4d8d-aadd-356ea8abaf77',
         'https://github.com/almarpa/MacularPRO_FrontEnd/assets/38918727/499dff14-8924-4907-917f-b643ba28980c',
-        'https://github.com/almarpa/MacularPRO_FrontEnd/assets/38918727/e4aac35f-d594-4411-82a8-bf7d809bb4c6',
         'https://github.com/almarpa/MacularPRO_FrontEnd/assets/38918727/37460f6c-7b60-4e4e-aca5-e40517c5e846',
       ],
       'https://github.com/almarpa/MacularPRO_FrontEnd',
