@@ -1,31 +1,55 @@
 .about-section {
   width: auto;
   height: auto;
-  padding: 100px;
+  padding: 80px 40px;
   background-color: #ffffff;
   align-content: center;
-  font-size: 1.3em;
+  font-size: 1.2em; /* aumentado */
   font-family: sans-serif;
-  letter-spacing: 1.5px;
-  line-height: 1.2em;
+  letter-spacing: 0.3px;
+  line-height: 1.7em; /* un poco más de espacio entre líneas */
+  color: #333;
+}
 
-  h1 {
-    margin: 20px 0;
-    font-weight: 900; 
-    font-size: 2em; 
-  }
+.about-section h1 {
+  margin: 20px 0;
+  font-weight: 600;
+  font-size: 2.5em; /* aumentado */
+  color: #222;
+}
 
-  li {
-    margin-bottom: 15px;
-  }
+.about-section h4 {
+  font-size: 1.4em; /* aumentado */
+  font-weight: 500;
+  margin-top: 1.5em;
+  color: #2c3e50;
+}
 
-  .profile {
-    width: 18em;
-    text-align: center;
+.about-section p,
+.about-section li {
+  font-weight: 300;
+  font-size: 1.1em; /* aumentado */
+  color: #555;
+}
 
-    @media only screen and (min-width: 768px) {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
+.about-section li {
+  margin-bottom: 14px;
+}
+
+.about-section .profile {
+  width: 18em;
+  text-align: center;
+}
+
+.about-section .profile img {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .about-section .profile {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
