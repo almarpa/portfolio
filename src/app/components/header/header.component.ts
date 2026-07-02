@@ -29,4 +29,13 @@ export class HeaderComponent {
   ];
 
   constructor() {}
+
+  scrollToAbout() {
+    if (typeof document !== 'undefined') {
+      const aboutSection = document.querySelector('.about-container');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({behavior: 'smooth'});
+      }
+    }
+  }
 }

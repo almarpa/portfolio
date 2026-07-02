@@ -2,54 +2,76 @@
 
 .site-footer {
   height: auto;
-  background-color: $gray-1000;
-  padding: 20px 0;
+  background-color: var(--footer-bg);
+  padding: 40px 0;
+  border-top: 1px solid var(--card-border);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .container > div {
-  color: white;
+  color: var(--text-secondary);
   font-size: 12px;
+  transition: color 0.3s ease;
 }
 
 footer h3 {
-  color: white;
-  margin: 0;
+  color: var(--text-primary);
+  margin: 0 0 10px 0;
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
 footer h3 span {
-  color: $skyblue;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+footer h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.3s ease;
 }
 
 footer nav.social-networks {
-  display: inline;
-  text-align: left;
-  height: 30px;
-  width: 30px;
-  
+  display: inline-flex;
+  gap: 12px;
+
   a {
-    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .circle-link {
-    fill: #ffffff;
-    height: 30px;
-    width: 30px;
-    margin: 0 0 15px 0;
+  fill: var(--text-secondary);
+  height: 28px;
+  width: 28px;
+  transition:
+    fill 0.3s ease,
+    transform 0.3s ease;
 
-    &:focus,
-    &:hover {
-      fill: fade-out($skyblue, .2);
-    }
+  &:focus,
+  &:hover {
+    fill: var(--primary-color);
+    transform: scale(1.1);
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     display: flex;
     text-align: center;
+    justify-content: space-around;
   }
   footer .container > div {
-    flex: auto;
+    flex: 1;
+    margin-bottom: 0;
   }
 }

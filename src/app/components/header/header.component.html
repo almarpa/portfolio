@@ -1,21 +1,45 @@
-<header>
+<header class="hero-header">
   <app-carousel
     [backgroundImages]="carouselImages"
     [thumbnailMode]="false"
+    class="hero-carousel"
   ></app-carousel>
-  <div class="overlay">
-    <div class="site-heading">
-      <h1>{{ greeting }}</h1>
-      <h1>{{ heading }}</h1>
-      <ngx-typed-js
-        class="subHeading"
-        [strings]="subHeading"
-        [loop]="true"
-        [typeSpeed]="80"
-        [backDelay]="5000"
-      >
-        <span class="typing"></span>
-      </ngx-typed-js>
+
+  <div class="hero-overlay">
+    <div class="hero-content text-center">
+      <!-- Greeting Badge -->
+      <div class="greeting-badge mb-4">
+        <span class="wave-emoji">👋</span>
+        <span class="greeting-text">{{ greeting }}</span>
+      </div>
+
+      <!-- Main Name Heading -->
+      <h1 class="hero-title mb-3">
+        {{ heading }}
+      </h1>
+
+      <!-- Typing Subheading -->
+      <div class="typing-container">
+        <ngx-typed-js
+          class="sub-heading"
+          [strings]="subHeading"
+          [loop]="true"
+          [typeSpeed]="60"
+          [backDelay]="3000"
+          [showCursor]="true"
+          [cursorChar]="'|'"
+        >
+          <span class="typing typing-accent"></span>
+        </ngx-typed-js>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" (click)="scrollToAbout()">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </div>
     </div>
   </div>
 </header>

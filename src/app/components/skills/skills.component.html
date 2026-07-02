@@ -1,8 +1,12 @@
-<div class="skills-section">
-  <h1 class="title">Skills</h1>
-  <div class="justify-content-center d-flex">
-    <div class="row">
-      <div class="col-lg-4" *ngFor="let skill of techSkills">
+<div class="skills-section container-fluid py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-subtitle">My Toolbox</span>
+      <h1 class="title">Skills<span class="title-accent"></span></h1>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-xl-4 col-md-6 col-12" *ngFor="let skill of techSkills">
         <app-skill [skill]="skill"></app-skill>
       </div>
     </div>

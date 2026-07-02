@@ -1,0 +1,133 @@
+// Theme Design Tokens (Variables de diseño para Modo Claro y Oscuro)
+
+:root {
+  // Common / Brand Colors
+  --primary-color: #0085a1;
+  --accent-color: #66fcf1;
+
+  // Default Dark Theme Tokens
+  --bg-primary: #0a0d14; // Darker base background for contrast
+  --bg-secondary: #161b26; // Lighter card/container background
+  --bg-about: #0a0d14;
+  --bg-projects: #0a0d14;
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-dark: #ffffff;
+
+  --card-bg: #161b26;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: rgba(0, 0, 0, 0.4);
+
+  --subtitle-color: #66fcf1;
+  --active-accent: #66fcf1;
+
+  --navbar-bg: rgba(16, 22, 30, 0.75);
+  --navbar-bg-scrolled: rgba(16, 22, 30, 0.92);
+  --navbar-text: rgba(255, 255, 255, 0.9);
+  --navbar-btn-bg: rgba(255, 255, 255, 0.08);
+  --navbar-border: rgba(255, 255, 255, 0.08);
+  --github-fill: #ffffff;
+  --footer-bg: #10161e;
+
+  // Experience specific (Dark)
+  --experience-overlay: linear-gradient(
+    135deg,
+    rgba(10, 13, 20, 0.9) 0%,
+    rgba(5, 7, 10, 0.96) 100%
+  );
+  --experience-text: rgba(255, 255, 255, 0.8);
+  --experience-title: #ffffff;
+  --experience-accent: #66fcf1;
+  --experience-dot-border: rgba(10, 13, 20, 1);
+  --experience-card-bg: #161b26;
+  --experience-card-hover-bg: #1d2433;
+  --experience-card-border: rgba(255, 255, 255, 0.08);
+  --experience-card-glow: 0 0 15px rgba(102, 252, 241, 0.15);
+
+  // Skills specific (Dark)
+  --pill-bg: rgba(255, 255, 255, 0.06);
+  --pill-border: rgba(255, 255, 255, 0.1);
+
+  // Hero specific (Dark)
+  --hero-overlay: radial-gradient(
+    circle at center,
+    rgba(10, 13, 20, 0.4) 0%,
+    rgba(10, 13, 20, 0.88) 100%
+  );
+  --hero-text: #ffffff;
+  --hero-greeting-bg: rgba(102, 252, 241, 0.08);
+  --hero-greeting-border: rgba(102, 252, 241, 0.15);
+  --hero-greeting-text: #66fcf1;
+  --hero-typing-color: #66fcf1;
+}
+
+html.light-mode {
+  // Light Theme Tokens (Calming slate/neutral tones to avoid blinding white)
+  --bg-primary: #f8fafc; // Soft slate-50 background for skills
+  --bg-secondary: #f1f5f9; // Soft slate-100 base
+  --bg-about: #f8fafc; // Soft slate-50 background for About Me section
+  --bg-projects: #f1f5f9; // Slate-100 background under cards
+
+  --text-primary: #0f172a; // Slate-900 (deep readable grey-black)
+  --text-secondary: #334155; // Slate-700
+  --text-muted: #64748b; // Slate-500
+  --text-dark: #0f172a;
+
+  --card-bg: #ffffff; // Pure white cards for depth
+  --card-border: rgba(15, 23, 42, 0.06); // Extremely soft dark border
+  --card-shadow: rgba(15, 23, 42, 0.04);
+
+  --subtitle-color: #0085a1; // Teal
+  --active-accent: #0085a1; // Teal
+
+  --navbar-bg: rgba(255, 255, 255, 0.75);
+  --navbar-bg-scrolled: rgba(255, 255, 255, 0.92);
+  --navbar-text: #334155; // Slate-700
+  --navbar-btn-bg: rgba(15, 23, 42, 0.04);
+  --navbar-border: rgba(15, 23, 42, 0.06);
+  --github-fill: #334155;
+  --footer-bg: #ffffff;
+
+  // Experience specific (Light)
+  --experience-overlay: linear-gradient(
+    135deg,
+    rgba(241, 245, 249, 0.9) 0%,
+    rgba(226, 232, 240, 0.95) 100%
+  );
+  --experience-text: #334155;
+  --experience-title: #0f172a;
+  --experience-accent: #0085a1;
+  --experience-dot-border: #ffffff;
+  --experience-card-bg: #ffffff;
+  --experience-card-hover-bg: #f1f5f9;
+  --experience-card-border: rgba(15, 23, 42, 0.06);
+  --experience-card-glow: 0 0 15px rgba(0, 133, 161, 0.08);
+
+  // Skills specific (Light)
+  --pill-bg: rgba(15, 23, 42, 0.03);
+  --pill-border: rgba(15, 23, 42, 0.05);
+
+  // Hero specific (Keep dark & premium in both modes)
+  --hero-overlay: radial-gradient(
+    circle at center,
+    rgba(10, 13, 20, 0.5) 0%,
+    rgba(10, 13, 20, 0.88) 100%
+  );
+  --hero-text: #ffffff;
+  --hero-greeting-bg: rgba(102, 252, 241, 0.08);
+  --hero-greeting-border: rgba(102, 252, 241, 0.15);
+  --hero-greeting-text: #66fcf1;
+  --hero-typing-color: #66fcf1;
+
+  // Switch theme icons visibility in light mode
+  .theme-toggle-btn {
+    .sun-icon {
+      display: block !important;
+    }
+    .moon-icon {
+      display: none !important;
+    }
+  }
+}

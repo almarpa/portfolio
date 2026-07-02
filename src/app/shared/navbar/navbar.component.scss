@@ -2,113 +2,209 @@
 
 :host {
   fa-icon {
-      font-size: 20px;
-      vertical-align: text-top;
+    font-size: 20px;
+    vertical-align: text-top;
   }
 }
 
-nav {
-  margin: 10px 0;
-  position: absolute;
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 22px 0;
+  background: var(--navbar-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--navbar-border);
+  box-shadow: 0 4px 30px var(--card-shadow);
+  transition:
+    all 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+  margin: 0;
+
+  // Scrolled state
+  &.scrolled {
+    padding: 12px 0;
+    background: var(--navbar-bg-scrolled);
+    box-shadow: 0 10px 30px var(--card-shadow);
+    border-bottom: 1px solid rgba(102, 252, 241, 0.2); // Maintain skyblue border-bottom on scroll in dark/light
+  }
+
   .navbar-brand {
-    height: 50px;
-    width: 50px;
-    &:focus,
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    svg {
+      fill: var(--github-fill);
+      transition:
+        fill 0.3s ease,
+        transform 0.3s ease;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover svg {
+      fill: var(--primary-color);
+      transform: scale(1.1);
+    }
+  }
+
+  .theme-toggle-btn {
+    border: none;
+    background: var(--navbar-btn-bg);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
     &:hover {
-      fill: fade-out($skyblue, .2);
+      background: var(--navbar-border);
+      color: var(--primary-color);
+
+      .theme-svg {
+        transform: rotate(45deg) scale(1.1);
+      }
+
+      .sun-icon circle {
+        r: 5;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .sun-icon {
+      display: none;
+    }
+
+    .moon-icon {
+      display: block;
+    }
+
+    .theme-svg {
+      width: 20px;
+      height: 20px;
+      transition:
+        transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+        stroke 0.3s ease;
+
+      circle {
+        transition: r 0.3s ease;
+      }
     }
   }
+
   .navbar-toggler {
-    font-size: 12px;
-    background-color: $gray-400;
-    border-radius: 10px 100px / 120px;
+    border: none;
+    background: var(--navbar-btn-bg);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background: var(--navbar-border);
+      outline: none;
+      box-shadow: none;
+    }
+
+    fa-icon {
+      color: var(--primary-color);
+    }
   }
+
   .navbar-nav {
-    margin-top: 15px;
-    > li.nav-item {
-      margin-top: 10px;
-      > a {
-        font-size: 16px;
-        letter-spacing: 1px;
-        font-weight: 800;
+    margin-top: 0;
+    align-items: center;
+
+    .nav-item {
+      margin: 0 8px;
+      position: relative;
+
+      a {
+        font-family: 'Outfit', 'Inter', 'Roboto', sans-serif;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        font-weight: 700;
         text-transform: uppercase;
-        &:focus,
+        color: var(--navbar-text) !important;
+        padding: 8px 18px !important;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        position: relative;
+        text-decoration: none;
+
+        // Custom indicator under links
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 2px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 2px;
+          background-color: var(--primary-color);
+          transition: width 0.3s ease;
+        }
+
         &:hover {
-          color: fade-out($skyblue, .2);
+          color: var(--primary-color) !important;
+
+          &::after {
+            width: 50%;
+          }
         }
       }
     }
   }
-  @media only screen and (min-width: 992px) {
-    background: transparent;
-    .navbar-brand {
-      &:focus,
-      &:hover {
-        fill: fade-out($skyblue, .2);
-      }
-    }
+
+  // Mobile menu style
+  @media (max-width: 991.98px) {
     .navbar-collapse {
-      flex-direction: row-reverse;
+      background: var(--navbar-bg-scrolled);
+      margin-top: 15px;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid var(--navbar-border);
+      box-shadow: 0 10px 30px var(--card-shadow);
     }
+
     .navbar-nav {
-      > li.nav-item {
-        > a {
-          padding: 10px 20px;
-          color: $gray-800;
-          &:focus,
+      align-items: stretch;
+
+      .nav-item {
+        margin: 8px 0;
+
+        a {
+          display: block;
+          padding: 10px 20px !important;
+          border-radius: 8px;
+          background: var(--navbar-btn-bg);
+
+          &::after {
+            display: none;
+          }
+
           &:hover {
-            color: fade-out($skyblue, .2);
+            background: var(--navbar-border);
+            color: var(--primary-color) !important;
           }
         }
       }
-    }
-  }
-  @media only screen and (min-width: 992px) {
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    &.is-fixed {
-      /* when the user scrolls down, we hide the header right above the viewport */
-      position: fixed;
-      top: -67px;
-      -webkit-transition: -webkit-transform 0.2s;
-      -moz-transition: -moz-transform 0.2s;
-      transition: transform 0.2s;
-      border-bottom: 1px solid darken($white, .05);
-      background-color: fade-out($white, .1);
-      .navbar-brand {
-        &:focus,
-        &:hover {
-          color: fade-out($skyblue, .2);
-          fill: fade-out($skyblue, .2);
-        }
-      }
-      .navbar-nav {
-        > li.nav-item {
-          > a {
-            color: $gray-800;
-            &:focus,
-            &:hover {
-              color: $primary;
-            }
-          }
-        }
-      }
-    }
-    &.is-visible {
-      /* if the user changes the scrolling direction, we show the header */
-      -webkit-transform: translate3d(0, 100%, 0);
-      -moz-transform: translate3d(0, 100%, 0);
-      -ms-transform: translate3d(0, 100%, 0);
-      -o-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
     }
   }
 }
