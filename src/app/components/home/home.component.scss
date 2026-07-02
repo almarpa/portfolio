@@ -1,16 +1,20 @@
 @import '../../../styles/styles.scss';
 
 .main-container {
+  section {
+    scroll-margin-top: 0px;
+  }
+
   .about-container {
     align-content: center;
-    min-height: 850px;
+    min-height: auto; // Remove hardcoded min-height to allow content scaling
   }
 
   .skills-container {
-    background-color: $gray-1000;
+    background: var(--bg-primary);
   }
 
   .projects-container {
-    background-color: $gray-400;
+    background: var(--bg-projects);
   }
 }

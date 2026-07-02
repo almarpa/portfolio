@@ -5,7 +5,7 @@ import {HeaderComponent} from '../header/header.component';
 import {AboutComponent} from '../about/about.component';
 import {SkillsComponent} from '../skills/skills.component';
 import {ExperienceComponent} from '../experience/experience.component';
-import { ProjectsComponent } from '../projects/projects.component';
+import {ProjectsComponent} from '../projects/projects.component';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ import { ProjectsComponent } from '../projects/projects.component';
     AboutComponent,
     SkillsComponent,
     ExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
@@ -30,15 +30,13 @@ export class HomeComponent {
 
   constructor() {}
 
-  scroll(section: String) {
-    if (section == 'about') {
-      this.aboutSection.nativeElement.scrollIntoView();
-    } else if (section == 'experience') {
-      this.experienceSection.nativeElement.scrollIntoView();
-    } else if (section == 'skills') {
-      this.skillsSection.nativeElement.scrollIntoView();
-    } else if (section == 'projects') {
-      this.projectsSection.nativeElement.scrollIntoView();
-    }
+  scroll(section: string) {
+    const sections: {[key: string]: ElementRef} = {
+      about: this.aboutSection,
+      experience: this.experienceSection,
+      skills: this.skillsSection,
+      projects: this.projectsSection,
+    };
+    sections[section]?.nativeElement.scrollIntoView();
   }
 }
