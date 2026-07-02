@@ -1,77 +1,118 @@
 @import '../../../styles/variables';
 
 .site-footer {
-  height: auto;
   background-color: var(--footer-bg);
-  padding: 40px 0;
   border-top: 1px solid var(--card-border);
+  font-family: 'Inter', 'Outfit', sans-serif;
   transition:
     background-color 0.3s ease,
     border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
 }
 
-.container > div {
-  color: var(--text-secondary);
-  font-size: 12px;
-  transition: color 0.3s ease;
+.footer-top {
+  border-color: var(--card-border) !important;
 }
 
-footer h3 {
-  color: var(--text-primary);
-  margin: 0 0 10px 0;
-  text-transform: uppercase;
-  font-size: 14px;
+.footer-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
   font-weight: 800;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
+  color: var(--text-primary);
+  margin-bottom: 0;
+  letter-spacing: -0.5px;
+  
+  .text-accent {
+    color: var(--primary-color);
+  }
 }
 
-footer h3 span {
-  color: var(--primary-color);
-  transition: color 0.3s ease;
+.footer-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 992px) {
+    margin: 0;
+  }
 }
 
-footer h4 {
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-muted);
-  transition: color 0.3s ease;
+.section-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-primary);
+  margin-bottom: 15px;
 }
 
-footer nav.social-networks {
-  display: inline-flex;
-  gap: 12px;
+// Tech badges
+.tech-badges {
+  .tech-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 6px 14px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
 
-  a {
+    &:hover {
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Social buttons
+.social-links {
+  .social-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 4px 12px var(--card-shadow);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      fill: var(--text-secondary);
+      transition: fill 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-4px) scale(1.08);
+      border-color: var(--primary-color);
+      box-shadow: 0 8px 20px rgba(0, 133, 161, 0.25);
+
+      .social-icon {
+        fill: var(--primary-color);
+      }
+    }
   }
 }
 
-.circle-link {
-  fill: var(--text-secondary);
-  height: 28px;
-  width: 28px;
-  transition:
-    fill 0.3s ease,
-    transform 0.3s ease;
-
-  &:focus,
-  &:hover {
-    fill: var(--primary-color);
-    transform: scale(1.1);
-  }
+// Footer bottom
+.copyright-text,
+.meta-item {
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
-@media only screen and (min-width: 768px) {
-  .container {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-  }
-  footer .container > div {
-    flex: 1;
-    margin-bottom: 0;
-  }
+.meta-item {
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
 }

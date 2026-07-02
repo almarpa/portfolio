@@ -20,17 +20,19 @@
 
       <!-- Typing Subheading -->
       <div class="typing-container">
-        <ngx-typed-js
-          class="sub-heading"
-          [strings]="subHeading"
-          [loop]="true"
-          [typeSpeed]="60"
-          [backDelay]="3000"
-          [showCursor]="true"
-          [cursorChar]="'|'"
-        >
-          <span class="typing typing-accent"></span>
-        </ngx-typed-js>
+        @defer {
+          <ngx-typed-js
+            class="sub-heading"
+            [strings]="subHeading"
+            [loop]="true"
+            [typeSpeed]="60"
+            [backDelay]="3000"
+            [showCursor]="true"
+            [cursorChar]="'|'"
+          >
+            <span class="typing typing-accent"></span>
+          </ngx-typed-js>
+        }
       </div>
     </div>
   </div>

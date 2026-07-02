@@ -2,6 +2,7 @@
   [showNavigationArrows]="thumbnailMode"
   [wrap]="!thumbnailMode"
   [interval]="thumbnailMode ? 0 : 7000"
+  [animation]="false"
 >
   <ng-template *ngFor="let image of backgroundImages" ngbSlide>
     <div [className]="thumbnailMode ? 'thumbnail-wrapper' : 'wrapper'">
