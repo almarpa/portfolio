@@ -17,10 +17,7 @@ export class ThemeService {
       if (stored) {
         this.setDarkMode(stored === 'dark');
       } else {
-        const systemPrefersDark = window.matchMedia(
-          '(prefers-color-scheme: dark)',
-        ).matches;
-        this.setDarkMode(systemPrefersDark);
+        this.setDarkMode(true);
       }
     }
   }

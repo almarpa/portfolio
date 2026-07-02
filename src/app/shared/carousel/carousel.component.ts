@@ -1,5 +1,5 @@
-import {CommonModule} from '@angular/common';
-import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
+import {CommonModule, isPlatformBrowser} from '@angular/common';
+import {ChangeDetectionStrategy, Component, Input, OnInit, Inject, PLATFORM_ID} from '@angular/core';
 import {NgbCarouselConfig, NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -11,12 +11,24 @@ import {NgbCarouselConfig, NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['carousel.component.scss'],
   providers: [NgbCarouselConfig],
 })
-export class CarouselComponent {
+export class CarouselComponent implements OnInit {
   @Input() backgroundImages!: string[];
   @Input() thumbnailMode!: boolean;
 
-  constructor(config: NgbCarouselConfig) {
+  constructor(
+    config: NgbCarouselConfig,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
     config.keyboard = false;
     config.pauseOnHover = false;
+  }
+
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId) && this.backgroundImages) {
+      this.backgroundImages.forEach((image) => {
+        const img = new Image();
+        img.src = image;
+      });
+    }
   }
 }
