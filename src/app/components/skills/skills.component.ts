@@ -91,7 +91,7 @@ export class SkillsComponent {
       new Skill('Testing', [
         new Technology(
           'JUnit',
-          'https://igorski.co/content/images/wordpress/2018/03/874086.png',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2t-wnqqugQXKmQd_DGhpXrr-OYZiGBreBkJwLO8QmlA&s=10',
         ),
         new Technology('MockK', 'https://mockk.io/doc/logo-site.png'),
         new Technology(

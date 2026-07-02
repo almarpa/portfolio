@@ -1,23 +1,56 @@
 @import '../../../styles/styles.scss';
 
 .wrapper {
-    img {
-        width: auto;
-        height: 825px;
+  img {
+    width: auto;
+    height: 825px;
 
-        @media only screen and (min-width: 992px) {
-            width: 100%;
-        }
+    @media only screen and (min-width: 992px) {
+      width: 100%;
     }
+  }
 }
 
 .thumbnail-wrapper {
-    img {
-        display: block;
-        width: auto;
-        height: 300px;
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+  img {
+    display: block;
+    width: auto;
+    height: 300px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Estilo moderno y visible para las flechas del carrusel (Bootstrap NgbCarousel)
+::ng-deep {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
     }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(15, 23, 42, 0.6);
+    border-radius: 50%;
+    background-size: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      background-color: var(--primary-color);
+      transform: scale(1.08);
+    }
+  }
 }

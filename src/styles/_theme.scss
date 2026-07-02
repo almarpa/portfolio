@@ -19,6 +19,7 @@
   --card-bg: #161b26;
   --card-border: rgba(255, 255, 255, 0.08);
   --card-shadow: rgba(0, 0, 0, 0.4);
+  --gallery-bg: #080b11;
 
   --subtitle-color: #66fcf1;
   --active-accent: #66fcf1;
@@ -34,8 +35,8 @@
   // Experience specific (Dark)
   --experience-overlay: linear-gradient(
     135deg,
-    rgba(10, 13, 20, 0.9) 0%,
-    rgba(5, 7, 10, 0.96) 100%
+    rgba(10, 13, 20, 0.7) 0%,
+    rgba(5, 7, 10, 0.82) 100%
   );
   --experience-text: rgba(255, 255, 255, 0.8);
   --experience-title: #ffffff;
@@ -78,6 +79,7 @@ html.light-mode {
   --card-bg: #ffffff; // Pure white cards for depth
   --card-border: rgba(15, 23, 42, 0.06); // Extremely soft dark border
   --card-shadow: rgba(15, 23, 42, 0.04);
+  --gallery-bg: #e2e8f0;
 
   --subtitle-color: #0085a1; // Teal
   --active-accent: #0085a1; // Teal
@@ -93,8 +95,8 @@ html.light-mode {
   // Experience specific (Light)
   --experience-overlay: linear-gradient(
     135deg,
-    rgba(241, 245, 249, 0.9) 0%,
-    rgba(226, 232, 240, 0.95) 100%
+    rgba(241, 245, 249, 0.72) 0%,
+    rgba(226, 232, 240, 0.82) 100%
   );
   --experience-text: #334155;
   --experience-title: #0f172a;

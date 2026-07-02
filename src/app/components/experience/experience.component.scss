@@ -3,9 +3,12 @@
 .experience-section {
   position: relative;
   width: 100%;
-  padding: 100px 0;
+  padding: 60px 0;
   font-family: 'Inter', 'Outfit', sans-serif;
-  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: 100px 0;
+  }
 }
 
 .experience-section::before {
@@ -20,7 +23,7 @@
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  filter: brightness(0.25) contrast(1.1); // Base level filter
+  filter: brightness(0.35) contrast(1.1); // Base level filter
   z-index: 1;
 }
 
@@ -42,13 +45,17 @@
   transition: color 0.3s ease;
 
   .title {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 800;
     letter-spacing: -0.5px;
     position: relative;
     display: inline-block;
     color: var(--experience-title);
     transition: color 0.3s ease;
+
+    @media (min-width: 768px) {
+      font-size: 2.8rem;
+    }
 
     .title-accent {
       position: absolute;
@@ -128,8 +135,12 @@
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--experience-card-border);
   border-radius: 20px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 10px 30px var(--card-shadow);
+
+  @media (min-width: 768px) {
+    padding: 30px;
+  }
   transition:
     all 0.3s cubic-bezier(0.16, 1, 0.3, 1),
     background-color 0.3s ease,

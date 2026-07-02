@@ -1,8 +1,12 @@
 @import '../../../styles/styles.scss';
 
 .projects-section {
-  padding: 100px 0;
+  padding: 60px 0;
   font-family: 'Inter', 'Outfit', sans-serif;
+
+  @media (min-width: 768px) {
+    padding: 100px 0;
+  }
 
   .section-subtitle {
     font-size: 0.9rem;
@@ -15,7 +19,7 @@
   }
 
   .title {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: var(--text-primary);
     letter-spacing: -0.5px;
@@ -23,6 +27,10 @@
     display: inline-block;
     margin-bottom: 0;
     transition: color 0.3s ease;
+
+    @media (min-width: 768px) {
+      font-size: 2.8rem;
+    }
 
     .title-accent {
       position: absolute;

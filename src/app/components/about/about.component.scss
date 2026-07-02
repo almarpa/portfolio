@@ -1,18 +1,22 @@
 @import '../../../styles/styles.scss';
 
 .about-section {
-  padding: 100px 0;
+  padding: 60px 0;
   background-color: var(--bg-about);
   font-family: 'Inter', 'Outfit', sans-serif;
   color: var(--text-secondary);
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+
+  @media (min-width: 768px) {
+    padding: 100px 0;
+  }
 }
 
 .profile-card {
   background: var(--card-bg);
-  padding: 30px;
+  padding: 20px;
   border-radius: 24px;
   box-shadow: 0 15px 35px var(--card-shadow);
   border: 1px solid var(--card-border);
@@ -23,6 +27,10 @@
     box-shadow 0.3s ease,
     background-color 0.3s ease,
     border-color 0.3s ease;
+
+  @media (min-width: 768px) {
+    padding: 30px;
+  }
 
   &:hover {
     transform: translateY(-5px);
@@ -116,10 +124,14 @@
   }
 
   .section-title {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: var(--text-primary);
     letter-spacing: -0.5px;
+
+    @media (min-width: 768px) {
+      font-size: 2.8rem;
+    }
   }
 
   .lead-text {
@@ -145,11 +157,15 @@
 .info-card {
   display: flex;
   background: var(--card-bg);
-  padding: 24px;
+  padding: 16px;
   border-radius: 16px;
   box-shadow: 0 8px 20px var(--card-shadow);
   border: 1px solid var(--card-border);
   transition: all 0.3s ease;
+
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
 
   &:hover {
     transform: translateX(5px);
